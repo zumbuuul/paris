@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url(//db.onlinewebfonts.com/c/ec9c69b803f20a95deb88c41b74e5a62?family=Ambroise);
+@font-face {
+  font-family: "Amb";
+  src: url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.eot");
+  src: url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.svg#Ambroise")
+      format("svg");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
