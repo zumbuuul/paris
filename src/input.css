@@ -15,6 +15,66 @@
     url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.svg#Ambroise")
       format("svg");
 }
+.test:hover {
+  animation: fadeout 0.2s ease-out forwards;
+}
+
+.urke {
+  animation: fadeout 0.4s forwards;
+}
+
+.velja {
+  animation: fadein 0.4s forwards;
+}
+
+.japa {
+  animation: opacityAnim 0.4s forwards;
+}
+
+.odzi {
+  animation: opacityAnimReverse 0.4s forwards;
+}
+
+@keyframes opacityAnimReverse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes opacityAnim {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    transform: translateY(0%);
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @tailwind base;
 @tailwind components;
