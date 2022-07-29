@@ -716,6 +716,18 @@ video {
   right: 1.25rem;
 }
 
+.right-10{
+  right: 2.5rem;
+}
+
+.right-12{
+  right: 3rem;
+}
+
+.right-11{
+  right: 2.75rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -812,6 +824,10 @@ video {
   background-image: url('/images/landing.jpg');
 }
 
+.bg-\[url\(\'\/images\/resi\.png\'\)\]{
+  background-image: url('/images/resi.png');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -826,6 +842,14 @@ video {
 
 .p-12{
   padding: 3rem;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.p-2{
+  padding: 0.5rem;
 }
 
 .px-\[15px\]{
@@ -1022,6 +1046,10 @@ video {
 
   .lg\:gap-\[50px\]{
     gap: 50px;
+  }
+
+  .lg\:p-12{
+    padding: 3rem;
   }
 
   .lg\:px-\[80px\]{
