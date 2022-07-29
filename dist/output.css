@@ -828,6 +828,10 @@ video {
   background-image: url('/images/resi.png');
 }
 
+.bg-\[url\(\'\/images\/small-landing\.png\'\)\]{
+  background-image: url('/images/small-landing.png');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -989,6 +993,10 @@ video {
     gap: 20px;
   }
 
+  .sm\:bg-\[url\(\'\/images\/small-landing\.png\'\)\]{
+    background-image: url('/images/small-landing.png');
+  }
+
   .sm\:px-\[20px\]{
     padding-left: 20px;
     padding-right: 20px;
@@ -1007,6 +1015,14 @@ video {
 
   .md\:gap-\[20px\]{
     gap: 20px;
+  }
+
+  .md\:bg-\[url\(\'\/images\/small-landing\.png\'\)\]{
+    background-image: url('/images/small-landing.png');
+  }
+
+  .md\:bg-\[url\(\'\/images\/resi\.png\'\)\]{
+    background-image: url('/images/resi.png');
   }
 
   .md\:px-\[20px\]{
@@ -1048,6 +1064,10 @@ video {
     gap: 50px;
   }
 
+  .lg\:bg-\[url\(\'\/images\/resi\.png\'\)\]{
+    background-image: url('/images/resi.png');
+  }
+
   .lg\:p-12{
     padding: 3rem;
   }
@@ -1074,6 +1094,14 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:bg-\[url\(\'\/images\/resi\.png\'\)\]{
+    background-image: url('/images/resi.png');
+  }
+
+  .xl\:bg-\[url\(\'\/images\/small-landing\.png\'\)\]{
+    background-image: url('/images/small-landing.png');
+  }
+
   .xl\:text-8xl{
     font-size: 6rem;
     line-height: 1;
