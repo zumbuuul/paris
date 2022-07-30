@@ -13,29 +13,35 @@
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
   <body class="">
+    <img
+      id="hamburger"
+      class="absolute z-[15] hover:cursor-pointer right-5 sm:hidden"
+      src="/images/hamburger.png"
+    />
+    <div
+      id="hiddencard"
+      class="z-10 top-0 text-2xl font-Uchen left-0 absolute w-full bg-gray-900 flex-col items-center text-white gap-[50px] py-[50px] hidden"
+    >
+      <a href="/">pocetna</a>
+      <a href="/onama.html">o nama</a>
+      <a href="/galerija.html">galerija</a>
+      <a href="/meni.html">meni</a>
+    </div>
     <p
       id="title"
       class="font-Ambr absolute text-white xl:text-8xl lg:text-7xl md:text-7xl sm:text-6xl text-4xl top-[50%] flex justify-center w-full z-10"
     >
       — GALERIJA —
     </p>
-    <header
-      class="z-10 absolute text-white text-lg md:text-xl top-[3rem] left-[3rem] w-[95%]"
-    >
-      <nav class="flex items-center justify-center">
-        <div class="mr-auto">
-          <a href="/" class="text-4xl font-Ambr">p a r i s</a>
-        </div>
-        <div class="sm:flex gap-[10px] md:gap-[20px] hidden">
-          <a href="/onama.html" class="text-white tracking-widest min-w-fit"
-            >o nama</a
-          >
-          <a href="/galerija.html" class="text-white tracking-widest"
-            >galerija</a
-          >
-          <a href="/meni.html" class="text-white tracking-widest">meni</a>
-          <a href="/" class="text-white tracking-widest">pocetna</a>
-        </div>
+    <header class="z-[5] absolute text-white font-Uchen p-[2vw] w-full text-lg">
+      <nav class="">
+        <span class="font-Ambr text-3xl">p a r i s</span>
+        <span class="float-right sm:flex hidden gap-[50px]">
+          <a href="/onama.html">o nama</a>
+          <a href="/galerija.html">galerija</a>
+          <a href="/meni.html">meni</a>
+          <a href="/">pocetna</a>
+        </span>
       </nav>
     </header>
     <div id="pavle" class="bg-black w-full h-full">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full">
+<html class="h-full overflow-hidden">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,14 +11,15 @@
     <link href="//db.onlinewebfonts.com/c/ec9c69b803f20a95deb88c41b74e5a62?family=Ambroise" rel="stylesheet" type="text/css"/>
   </head>
   <body class="h-full">
+    <p class="text-center text-white bg-red-600 w-full sticky top-0">Popust 10% na sve rezervacije zakljucene ugovorom do 01.10.2022</p>
     <header class="h-full">
       <div
         class="bg-[url('/images/gradient.png')] w-full h-full bg-cover"
         alt="Enterijer restorana"
       >
-        <nav class="p-[2vw] flex justify-center items-center font-Ambr  md:text-xl lg:text-2xl">
+        <nav class="p-[2vw] flex justify-center items-center font-Uchen text-lg">
           <a href="/"
-            class="sm:static  text-4xl text-white mr-auto  font-semibold"
+            class="text-4xl text-white mr-auto  font-semibold"
             >p a r i s</a>
           <div class="sm:flex lg:gap-[50px] sm:gap-[20px] hidden">
           <a href="/onama.html" class="text-white  tracking-widest min-w-fit">o nama</a>
@@ -26,7 +27,13 @@
           <a href="/meni.html" class="text-white  tracking-widest">meni</a>
           <a href="/" class="text-white  tracking-widest">pocetna</a>
           </div>
-          <img class="absolute right-5 sm:hidden"src="/images/hamburger.png"/>
+          <img id="hamburger" class="absolute z-10 hover:cursor-pointer right-5 sm:hidden"src="/images/hamburger.png"/>
+          <div id="hiddencard" class="top-0 text-2xl font-Uchen left-0 absolute w-full bg-gray-900 flex-col items-center text-white gap-[50px] py-[50px] hidden">
+            <a href="/">pocetna</a>
+            <a href="/onama.html">o nama</a>
+            <a href="/galerija.html">galerija</a>
+            <a href="/meni.html">meni</a>
+          </div>
         </nav>
        <main class="w-[90%] mx-auto h-[70%] flex items-center justify-center text-center">
         <div class="w-[450px] md:w-[600px] lg:w-[1250px] mb-[200px] lg:mb-[100px]">
@@ -46,5 +53,6 @@
       
       </main>
     </header>
+    <script async defer src="/scripts/eventhandlers.js"></script>
   </body>
 </html>
