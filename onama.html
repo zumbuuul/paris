@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
   <body class="h-full">
-    <div class="h-full w-full bg-[url('/images/gradient.png')] bg-cover">
+    <p class="text-center text-white bg-red-600 w-full sticky top-0">Popust 10% na sve rezervacije zakljucene ugovorom do 01.10.2022</p>
+  
+    <div
+      class="h-full w-full bg-[url('/images/gradient.png')] bg-cover"
+    >
+    <header>
       <nav
-        class="p-[2vw] flex justify-center items-center font-Ambr md:text-xl lg:text-2xl"
+        class="p-[2vw] flex justify-center items-center font-Uchen text-lg"
       >
-        <a href="/" class="sm:static text-4xl text-white mr-auto font-semibold"
+        <a href="/" class="text-4xl text-white mr-auto font-semibold"
           >p a r i s</a
         >
         <div class="sm:flex lg:gap-[50px] sm:gap-[20px] hidden">
@@ -30,36 +35,36 @@
           <a href="/meni.html" class="text-white tracking-widest">meni</a>
           <a href="/" class="text-white tracking-widest">pocetna</a>
         </div>
-        <img class="absolute right-5 sm:hidden" src="/images/hamburger.png" />
+        <img id="hamburger" class="absolute z-10 hover:cursor-pointer right-5 sm:hidden"src="/images/hamburger.png"/>
+          <div id="hiddencard" class="top-0 text-2xl font-Uchen left-0 absolute w-full bg-gray-900 flex-col items-center text-white gap-[50px] py-[50px] hidden">
+            <a href="/">pocetna</a>
+            <a href="/onama.html">o nama</a>
+            <a href="/galerija.html">galerija</a>
+            <a href="/meni.html">meni</a>
+          </div>
       </nav>
       <p
-        class="font-Ambr text-6xl text-white flex h-[80%] items-center justify-center"
+        id="title"
+        class="font-Ambr text-6xl text-white w-10/12 mx-auto block text-center mt-[30vh]"
       >
         — O NAMA —
       </p>
     </div>
+    
     <main class="text-center w-10/12 mx-auto pb-[150px]">
-      <h1 class="w-8/12 mx-auto text-3xl mb-[20vh] mt-[10vh]">
-        Lorem ipsum dolor sit, <br />
-        amet consectetur adipisicing elit. Odit, dolores.
+      <h1 class="w-8/12 mx-auto text-3xl mb-[20vh] mt-[10vh] font-Ambr">
+        tu smo da zajedno <br />
+        obelezimo vase najsrecnije trenutke
       </h1>
-      <p class="w-8/12 mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum deserunt
-        optio ratione qui facere non nobis aliquid ducimus eligendi architecto
-        fugiat sapiente tenetur culpa aliquam ex voluptate rerum, voluptatum
-        ipsa ullam incidunt repellat illo harum beatae? Labore adipisci
-        accusamus eligendi possimus harum facere exercitationem debitis dolores
-        ullam atque, voluptatum dolore itaque voluptate praesentium dolor
-        officia suscipit mollitia!
+      <p class="w-8/12 mx-auto text-xl font-Uchen">
+        Paris Lux je restoran za sve one koji zele da imaju autenticnu proslavu koja ce se pamtiti.
         <br />
         <br />
-        Incidunt obcaecati rerum deserunt vero maiores repudiandae quo explicabo
-        illo ea in ut, quod distinctio dolorem consequuntur veritatis similique
-        corrupti nam esse qui reiciendis itaque quas. Similique amet modi,
-        pariatur quis quos, qui, voluptate quam nihil incidunt neque reiciendis
-        repellat corrupti porro cumque!
+        Organizujemo svadbe, rodjendane, zurke, poslovne ruckove kojima moze prisustvovati <b>130</b> osoba.
+        Restoran se nalazi u samom gradu sa dovoljno parking mesta za maksimalno uzivanje. Kod nas cete se upoznati sa unikatnom kuhinjom, prijatnim osobljem i opustajucim ambijentom.
       </p>
     </main>
+    
     <footer class="py-[100px] text-center border-t-gray-300 border-t-2">
       <h1 class="text-6xl pb-[50px]">— p a r i s —</h1>
       <br />
@@ -79,6 +84,6 @@
         /></a>
       </div>
     </footer>
-    <script src="" async defer></script>
+    <script src="/scripts/eventhandlers.js" async defer></script>
   </body>
 </html>

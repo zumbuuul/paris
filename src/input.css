@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Uchen&display=swap");
 @import url(//db.onlinewebfonts.com/c/ec9c69b803f20a95deb88c41b74e5a62?family=Ambroise);
 @font-face {
   font-family: "Amb";
@@ -68,11 +67,12 @@
 
 @keyframes fadein {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(-100px);
     opacity: 0;
   }
   100% {
     opacity: 1;
+    transform: translateY(0px);
   }
 }
 

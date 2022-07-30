@@ -3,6 +3,8 @@ const overlay = document.querySelector("#pavle");
 let verticalScroll = 0;
 
 const images = document.getElementsByClassName("opacity-30");
+const hamburger = document.querySelector("#hamburger");
+const hiddencard = document.querySelector("#hiddencard");
 
 window.addEventListener("scroll", () => {
   verticalScroll = window.scrollY;
@@ -25,5 +27,16 @@ window.addEventListener("scroll", () => {
       item.classList.add("odzi");
       item.classList.remove("japa");
     }
+  }
+});
+let opened = false;
+hamburger.addEventListener("click", () => {
+  if (opened == false) {
+    console.log("press");
+    opened = true;
+    hiddencard.style.display = "flex";
+  } else {
+    opened = false;
+    hiddencard.style.display = "none";
   }
 });
