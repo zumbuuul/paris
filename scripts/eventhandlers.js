@@ -35,8 +35,10 @@ hamburger.addEventListener("click", () => {
     console.log("press");
     opened = true;
     hiddencard.style.display = "flex";
+    document.querySelector("#title").style.display = "none";
   } else {
     opened = false;
     hiddencard.style.display = "none";
+    document.querySelector("#title").style.display = "block";
   }
 });
