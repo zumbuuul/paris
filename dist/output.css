@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Uchen&display=swap");
 
-@font-face {
-  font-family: "Amb";
-
-  src: "Ambroise.otf";
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .test:hover {
   -webkit-animation: fadeout 0.2s ease-out forwards;
@@ -953,7 +949,7 @@ video {
 }
 
 .font-Ambr{
-  font-family: "Amb";
+  font-family: "Bebas Neue";
 }
 
 .text-2xl{

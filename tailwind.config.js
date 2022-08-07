@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Uchen: ['"Uchen'],
-        Ambr: ['"Amb"'],
+        Ambr: ['"Bebas Neue"'],
       },
     },
   },
