@@ -1,23 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Uchen&display=swap");
 
-@import url(//db.onlinewebfonts.com/c/ec9c69b803f20a95deb88c41b74e5a62?family=Ambroise);
-
-@font-face {
-  font-family: "Amb";
-
-  src: url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.eot");
-
-  src: url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/ec9c69b803f20a95deb88c41b74e5a62.svg#Ambroise")
-      format("svg");
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .test:hover {
   -webkit-animation: fadeout 0.2s ease-out forwards;
@@ -779,6 +762,10 @@ video {
   z-index: 5;
 }
 
+.z-\[10\]{
+  z-index: 10;
+}
+
 .float-right{
   float: right;
 }
@@ -926,6 +913,10 @@ video {
   background-image: url('/images/gradient.png');
 }
 
+.bg-\[url\(\'\/images\/gradient\.jpg\'\)\]{
+  background-image: url('/images/gradient.jpg');
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -966,7 +957,7 @@ video {
 }
 
 .font-Ambr{
-  font-family: "Amb";
+  font-family: "Bebas Neue";
 }
 
 .text-lg{
@@ -1027,6 +1018,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .opacity-30{
