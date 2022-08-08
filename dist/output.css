@@ -905,10 +905,6 @@ video {
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/gradient\.png\'\)\]{
-  background-image: url('/images/gradient.png');
-}
-
 .bg-\[url\(\'\/images\/gradient\.jpg\'\)\]{
   background-image: url('/images/gradient.jpg');
 }
