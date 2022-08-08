@@ -730,12 +730,12 @@ video {
   position: sticky;
 }
 
-.right-5{
-  right: 1.25rem;
-}
-
 .top-0{
   top: 0px;
+}
+
+.right-5{
+  right: 1.25rem;
 }
 
 .left-0{
@@ -746,12 +746,16 @@ video {
   top: 50%;
 }
 
-.z-\[15\]{
-  z-index: 15;
-}
-
 .z-10{
   z-index: 10;
+}
+
+.z-\[10\]{
+  z-index: 10;
+}
+
+.z-\[15\]{
+  z-index: 15;
 }
 
 .z-\[5\]{
@@ -775,12 +779,16 @@ video {
   margin-right: auto;
 }
 
-.mb-\[200px\]{
-  margin-bottom: 200px;
+.mt-\[30vh\]{
+  margin-top: 30vh;
 }
 
-.mb-\[30px\]{
-  margin-bottom: 30px;
+.mb-\[20vh\]{
+  margin-bottom: 20vh;
+}
+
+.mt-\[10vh\]{
+  margin-top: 10vh;
 }
 
 .mt-\[20vh\]{
@@ -795,16 +803,12 @@ video {
   margin-bottom: 30vh;
 }
 
-.mt-\[30vh\]{
-  margin-top: 30vh;
+.mb-\[200px\]{
+  margin-bottom: 200px;
 }
 
-.mb-\[20vh\]{
-  margin-bottom: 20vh;
-}
-
-.mt-\[10vh\]{
-  margin-top: 10vh;
+.mb-\[30px\]{
+  margin-bottom: 30px;
 }
 
 .block{
@@ -835,20 +839,20 @@ video {
   width: 100%;
 }
 
-.w-\[90\%\]{
-  width: 90%;
-}
-
-.w-\[450px\]{
-  width: 450px;
-}
-
 .w-10\/12{
   width: 83.333333%;
 }
 
 .w-8\/12{
   width: 66.666667%;
+}
+
+.w-\[90\%\]{
+  width: 90%;
+}
+
+.w-\[450px\]{
+  width: 450px;
 }
 
 .min-w-fit{
@@ -890,6 +894,11 @@ video {
   border-top-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
+.bg-red-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -898,11 +907,6 @@ video {
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-red-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/images\/gradient\.png\'\)\]{
@@ -926,22 +930,22 @@ video {
   padding-bottom: 50px;
 }
 
-.px-\[15px\]{
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .py-\[100px\]{
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.pb-\[50px\]{
-  padding-bottom: 50px;
+.px-\[15px\]{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .pb-\[150px\]{
   padding-bottom: 150px;
+}
+
+.pb-\[50px\]{
+  padding-bottom: 50px;
 }
 
 .text-center{
@@ -956,9 +960,9 @@ video {
   font-family: "Bebas Neue";
 }
 
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-4xl{
@@ -966,23 +970,9 @@ video {
   line-height: 2.5rem;
 }
 
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-\[1\.25rem\]{
-  font-size: 1.25rem;
-}
-
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-5xl{
@@ -993,6 +983,20 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[1\.25rem\]{
+  font-size: 1.25rem;
 }
 
 .font-semibold{
