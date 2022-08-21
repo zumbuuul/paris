@@ -35,12 +35,70 @@
   }
 }
 
-#cf3 img.top {
-  animation-name: cf3FadeInOut;
-  animation-timing-function: ease-in-out;
+@keyframes crossfade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  53% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#images img:nth-of-type(1) {
+  animation-name: crossfade;
   animation-iteration-count: infinite;
-  animation-duration: 10s;
-  animation-direction: alternate;
+  animation-duration: 15s;
+}
+#images img:nth-of-type(2) {
+  animation-name: crossfade;
+  animation-iteration-count: infinite;
+  animation-delay: -10s;
+  animation-duration: 15s;
+}
+#images img:nth-of-type(3) {
+  animation-name: crossfade;
+  animation-iteration-count: infinite;
+  animation-delay: -5s;
+  animation-duration: 15s;
+}
+
+#spinner {
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #db213a;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#spinnercontainer {
+  animation: loadingend 0.7s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes loadingend {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @keyframes opacityAnimReverse {
@@ -49,6 +107,15 @@
   }
   100% {
     opacity: 0.4;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
