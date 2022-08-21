@@ -63,17 +63,123 @@
   }
 }
 
-#cf3 img.top {
-  -webkit-animation-name: cf3FadeInOut;
-          animation-name: cf3FadeInOut;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+@-webkit-keyframes crossfade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  53% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes crossfade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  53% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#images img:nth-of-type(1) {
+  -webkit-animation-name: crossfade;
+          animation-name: crossfade;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+#images img:nth-of-type(2) {
+  -webkit-animation-name: crossfade;
+          animation-name: crossfade;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+#images img:nth-of-type(3) {
+  -webkit-animation-name: crossfade;
+          animation-name: crossfade;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+}
+
+#spinner {
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #db213a;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+#spinnercontainer {
+  -webkit-animation: loadingend 0.7s ease-out forwards;
+          animation: loadingend 0.7s ease-out forwards;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+@-webkit-keyframes loadingend {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loadingend {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 @-webkit-keyframes opacityAnimReverse {
@@ -93,6 +199,26 @@
 
   100% {
     opacity: 0.4;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 
@@ -746,6 +872,10 @@ video {
   top: 50%;
 }
 
+.z-\[100\]{
+  z-index: 100;
+}
+
 .z-\[15\]{
   z-index: 15;
 }
@@ -756,6 +886,10 @@ video {
 
 .z-\[5\]{
   z-index: 5;
+}
+
+.z-\[-5\]{
+  z-index: -5;
 }
 
 .z-\[10\]{
@@ -771,6 +905,11 @@ video {
   margin-right: auto;
 }
 
+.my-\[200px\]{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
 .mr-auto{
   margin-right: auto;
 }
@@ -781,18 +920,6 @@ video {
 
 .mb-\[30px\]{
   margin-bottom: 30px;
-}
-
-.mt-\[20vh\]{
-  margin-top: 20vh;
-}
-
-.mt-\[2vh\]{
-  margin-top: 2vh;
-}
-
-.mb-\[30vh\]{
-  margin-bottom: 30vh;
 }
 
 .mt-\[30vh\]{
@@ -833,6 +960,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[100vw\]{
+  width: 100vw;
 }
 
 .w-\[90\%\]{
@@ -890,14 +1021,14 @@ video {
   border-top-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
-.bg-gray-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-gray-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 .bg-red-600{
@@ -905,12 +1036,22 @@ video {
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/gradient\.jpg\'\)\]{
-  background-image: url('/images/gradient.jpg');
+.bg-\[url\(\'\/images\/about\.png\'\)\]{
+  background-image: url('/images/about.png');
 }
 
 .bg-cover{
   background-size: cover;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-\[20\%\]{
+  -o-object-position: 20%;
+     object-position: 20%;
 }
 
 .p-\[2vw\]{
@@ -991,10 +1132,6 @@ video {
   line-height: 1.75rem;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .italic{
   font-style: italic;
 }
@@ -1015,6 +1152,16 @@ video {
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-red-600{
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .opacity-30{
